@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+
+<body>
+    Objects
+    <script>
+        //var player = new Object {};  - one way to declare an empty object
+        var player = {
+            name: 'Your name',
+            energy: 100,
+            lives: 2,
+            x: 19,
+            y: 100,
+            color: 'blue'
+        };
+
+        console.log(player);
+        //one way of accesing a propriety for an object
+        console.log(player.name);
+        //another way of accesing a propriety for an object
+        console.log(player['color']);
+        //modifying a propriety
+        player.name = "some other name";
+        console.log(player.name);
+        
+        //adding a new propriety to an object (Objects can have other objects as proprieties)
+        player.friend= {name: 'Pablo'};
+        player.weapon= 'sword';
+    </script>
+</body>
+
+</html>
