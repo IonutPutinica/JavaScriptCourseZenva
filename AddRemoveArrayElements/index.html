@@ -1,0 +1,25 @@
+<html>
+
+<head></head>
+
+<body>
+    Adding and removing elements from arrays
+    <script>
+        var weapons = ['sword', 'laser gun', 'stick', 'axe'];
+
+        //array length
+        console.log(weapons.length);
+        //push()
+        weapons.push('knife', 'laser knife');
+        //pop() -removes the last element in the array
+        weapons.pop();
+        //splice() -here you specify in what position you want the changes to take place
+        
+        weapons.splice(1,2, 'bomb', 'bow and arrow');
+        
+        console.log(weapons);
+
+    </script>
+</body>
+
+</html>
