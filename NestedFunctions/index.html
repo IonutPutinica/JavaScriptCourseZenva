@@ -1,0 +1,25 @@
+<html>
+
+<head></head>
+
+<body>
+    Nested Functions
+    <script>
+        function showEverywhere(text) {
+            //a function that is written inside another function CANNOT be used outside of the function - it has a local scope
+            function decorate(a) {
+                return "###----" + a + "----###";
+            }
+
+            text = decorate(text);
+
+            console.log(text);
+            alert(text);
+        };
+
+        showEverywhere("Hello World");
+
+    </script>
+</body>
+
+</html>
